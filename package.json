@@ -1,0 +1,33 @@
+{
+  "name": "kubc_lab_m21_deep-thoughts",
+  "version": "1.0.0",
+  "description": "community deep thoughts",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTKHScriptPoetry/KUBC_LAB_M21_Deep-Thoughts.git"
+  },
+  "keywords": [
+    "Apollo",
+    "GraphGL",
+    "Express",
+    "Node.js",
+    "JWT"
+  ],
+  "author": "N/A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TTKHScriptPoetry/KUBC_LAB_M21_Deep-Thoughts/issues"
+  },
+  "homepage": "https://github.com/TTKHScriptPoetry/KUBC_LAB_M21_Deep-Thoughts#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.0"
+  }
+}
